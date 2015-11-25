@@ -1,3 +1,143 @@
+html{
+	font-weight:lighter;
+	overflow-x: hidden;
+	background-color: #fff;
+    height: 100%;
+	width: 100%;
+	font: 1.1em "Titillium Web", sans-serif; font-weight: 300;
+}
+
+
+/* Navigation bar */
+
+nav {
+	margin-left: -0.45%;
+    margin-right: auto;
+	margin-top: -0.45%;
+    width: 100%;
+	z-index:20;
+	position:fixed;
+}
+
+/* common and top level styles */
+
+#nav span {
+    display: none;
+}
+#nav, #nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    background-color: #fff;
+    border-bottom: 2px solid #2196F3;
+    float: left;
+    position: relative;
+    width: 100%;
+	color: #333;
+    font: 1.1em "Titillium Web", sans-serif; font-weight: 300;
+	box-shadow: 1px 1px 5px rgba(33,150,243, 0.9);
+}
+#nav ul.subs {
+	z-index:2;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(33,150,243, 0.9);
+    color: #333;
+    display: none;
+    left: 0;
+    padding: 2%;
+    position: absolute;
+    top: 54px;
+    width: 96%;
+}
+#nav > li {
+    border-bottom: 2px solid transparent;
+    float: left;
+    margin-bottom: -2px;
+    text-align: left;
+}
+#nav li a {
+    display: block;
+    text-decoration: none;
+    white-space: normal;
+}
+#nav > li > a {
+    color: #333;
+    display: block;
+    font-size: 1.3em;
+    line-height: 49px;
+    padding: 0 20px;
+}
+#nav > li:hover > a, #nav > a:hover {
+    background-color: #1565C0;
+}
+#nav li.active > a {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+/* submenu */
+#nav li:hover ul.subs {
+    display: block;
+}
+#nav ul.subs > li {
+    display: inline-block;
+    float: none;
+    padding: 10px 1%;
+    vertical-align: top;
+    width: 33%;
+}
+#nav ul.subs > li a {
+    color: #333;
+    line-height: 20px;
+}
+
+#nav ul.subs > li > a {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+#nav ul.subs > li li {
+    float: none;
+    padding-left: 8px;
+}
+#nav ul.subs > li li:hover {
+    padding-left: 15px;
+}
+
+/* Media Queries */
+/* responsive rules */
+
+@media all and (max-width : 980px) {
+    #nav > li {
+        float: none;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+    #nav ul.subs {
+        position: relative;
+        top: 0;
+    }
+    #nav li:hover ul.subs {
+        display: none;
+    }
+    #nav li #s1:target + ul.subs,
+    #nav li #s2:target + ul.subs {
+        display: block;
+    }
+
+    #nav ul.subs > li {
+        display: block;
+        width: auto;
+    }
+	#nav{
+		z-index:1;
+	}
+	nav{
+		position:static;
+	}
+}
+
 
 /* Responsive Grid */
 
