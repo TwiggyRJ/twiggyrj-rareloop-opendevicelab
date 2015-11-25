@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="148px" height="148px" viewBox="0 0 148 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>odl-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-207.000000, -77.000000)" fill="#000000">
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(67.000000, 77.000000)">
+                <path d="M195.58,107.57 L232.93,107.57 L232.93,40.43 L195.58,40.43 L195.58,107.57 Z M214.43,118.5 C216.69,118.5 218.53,116.65 218.53,114.37 C218.53,112.09 216.69,110.24 214.43,110.24 C212.17,110.24 210.34,112.09 210.34,114.37 C210.34,116.65 212.17,118.5 214.43,118.5 L214.43,118.5 Z M218.6,35.3 L218.6,35.23 C218.6,34.68 218.16,34.23 217.61,34.23 L210.9,34.23 C210.35,34.23 209.91,34.68 209.91,35.23 L209.91,35.3 C209.91,35.85 210.35,36.3 210.9,36.3 L217.61,36.3 C218.16,36.3 218.6,35.85 218.6,35.3 L218.6,35.3 Z M140,74 C140,114.87 173.13,148 214,148 C254.87,148 288,114.87 288,74 C288,33.13 254.87,0 214,0 C173.13,0 140,33.13 140,74 L140,74 Z M236,33.33 L236,114.67 C236,118.17 233.19,121 229.73,121 L198.27,121 C194.81,121 192,118.17 192,114.67 L192,33.33 C192,29.83 194.81,27 198.27,27 L229.73,27 C233.19,27 236,29.83 236,33.33 L236,33.33 Z" id="odl-logo" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
