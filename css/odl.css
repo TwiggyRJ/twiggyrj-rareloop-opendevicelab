@@ -12,7 +12,7 @@ header{
 	position: relative;
     display: inline-block;
     overflow: hidden;
-    width: 101.1% !important;;
+    width: 101.1% !important;
     height: 400px;
     margin-bottom: -6px;
 	margin-right: 0.45% !important;
@@ -26,9 +26,9 @@ header h1{
 	left: 0; 
 	width: 100%; 
 	font-size: 4em;
-	text-align:left;
 	padding-left:20px;
-	vertical-align: bottom;
+	margin-top: -2.5%;
+	text-align: center;
 }
 
 header h1 span.grey{
@@ -53,6 +53,18 @@ header h1 span.spacing{
     min-width: 100%;
 }
 
+#banner-booking{
+	
+	position: absolute; 
+	top: 300px; 
+	left: 0; 
+	width: 100%; 
+	font-size: 2em;
+	padding-left:20px;
+	margin-top: -2.5%;
+	text-align: center;
+	
+}
 
 footer{
 	
@@ -65,12 +77,132 @@ footer{
 	
 }
 
+footer a{
+	color: #fff;
+	text-decoration: none !important;
+	font-weight: 500 !important;
+}
+
+footer ul{
+	list-style: none outside none;
+	margin-left: -10%;
+}
+
+
+
+@media all and (max-width : 980px) {
+
+	header{
+		margin-top: -1% !important;
+		margin-left: -1% !important;
+		margin-right: 1% !important;
+		width: 103% !important;
+	}
+	
+}
+
+
+/* Buttons */
+
+.button{
+	font-size: 1.3em;
+	color:#FFFFFF;
+	background-color: #2196F3;
+	cursor:pointer;
+	position:relative;
+	padding:1px 10px;
+	border:none !important;
+	border-radius: 5px;
+}
+
+.book_form_button{
+	font-size: 0.8em !important;
+}
+.button_footer{
+	background-color: #1565c0 !important;
+}
+
+a.button{
+	font-size: 1.5em;
+	color:#FFFFFF;
+	background-color: #2196F3;
+	cursor:pointer;
+	position:relative;
+	padding:5px 10px;
+    white-space: normal;
+}
+
+.button:hover {
+    color: #FFFFFF;
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+	background-color: #1E88E5;
+}
+
+.button_footer:hover{
+	background-color: #0d47a1 !important;
+}
+
+
+/* Inputs */
+
+
+input[type=text], textarea {
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #333;
+
+}
+
+select{
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #333;
+
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px #1E88E5;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #1E88E5;
+}
+
+#banner-form select{
+	font-size: 0.45em;
+	font: "Titillium Web", sans-serif; font-weight: 300;
+}
+#banner-form input[type=text], textarea {
+	font-size: 0.5em;
+	font: "Titillium Web", sans-serif; font-weight: 300;
+}
+
+#booking-form input[type=datetime-local], textarea {
+	font-size: 0.1em;
+	font: "Titillium Web", sans-serif; font-weight: 300;
+}
+
+input[type=datetime-local], textarea {
+  outline: none;
+  padding: 4px 0px 2px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #333;
+}
+
+input[type=datetime-local]:focus, textarea:focus {
+  box-shadow: 0 0 5px #1E88E5;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #1E88E5;
+}
+
 /* Navigation bar */
 
 nav {
 	margin-left: -0.45%;
     margin-right: auto;
-	margin-top: -0.45%;
+	margin-top: -0.6%;
     width: 100%;
 	z-index:20;
 	position:fixed;
@@ -105,7 +237,7 @@ nav {
     left: 0;
     padding: 2%;
     position: absolute;
-    top: 54px;
+    top: 51px;
     width: 96%;
 }
 #nav > li {
@@ -128,6 +260,7 @@ nav {
 }
 #nav > li:hover > a, #nav > a:hover {
     background-color: #1E88E5;
+	color: #fff;
 }
 #nav li.active > a {
     background-color: #2196F3;
@@ -192,9 +325,35 @@ nav {
 	}
 	nav{
 		position:static;
+		margin-bottom: -1%;
+		margin-left: -2%;
+		width: 110%;
 	}
 }
 
+@media all and (max-width : 650px) {
+	
+	nav{
+		margin-bottom: -1.2%;
+	}
+	
+}
+
+@media all and (max-width : 500px) {
+	
+	nav{
+		margin-bottom: -1.65%;
+	}
+	
+}
+
+@media all and (max-width : 400px) {
+	
+	nav{
+		margin-bottom: -2%;
+	}
+	
+}
 
 /* Responsive Grid */
 
