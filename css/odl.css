@@ -46,6 +46,25 @@ header h1 span.spacing{
 	line-height:1.95em;
 }
 
+.map{
+	float: right;
+	margin: 2%;
+	width: 600px;
+	height: 600px;
+}
+
+.mapContainer{
+	float: right !important;
+}
+
+#jsMap{
+	visibility: hidden;
+}
+
+#mapImage{
+	height: 400px;
+}
+
 #banner-image {
     position: absolute;
     min-height: 100%;
@@ -137,7 +156,6 @@ a.button{
 
 .button:hover {
     color: #FFFFFF;
-	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
 	background-color: #1E88E5;
 }
 
