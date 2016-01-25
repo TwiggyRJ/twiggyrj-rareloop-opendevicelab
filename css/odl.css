@@ -57,6 +57,7 @@ header h1 span.spacing{
 	margin: 2%;
 	width: 600px;
 	height: 600px;
+	margin-right: 3% !important;
 }
 
 .mapContainer{
@@ -69,6 +70,8 @@ header h1 span.spacing{
 
 #mapImage{
 	height: 400px;
+	margin-left: -5%;
+	position: absolute;
 }
 
 #banner-image {
