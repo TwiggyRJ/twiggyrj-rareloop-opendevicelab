@@ -6,6 +6,7 @@
 		<title>Open Device Lab Southampton</title>
 		<link rel="stylesheet" type="text/css" href="css/odl.css"/>
 		<link media="screen" href="http://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700" type="text/css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	
 	</head>
 	
@@ -19,7 +20,7 @@
 	</nav>
 	
 	
-	
+	<body onload="init()">
 	<div class="section group">
 		
 		
@@ -31,10 +32,10 @@
 			</h1>
 			
 			<span id = "banner-booking">
-				<form id = "banner-form">
-					<input type = "text" placeholder="Who Are You?"/>
-					<input type = "datetime-local" placeholder="When Would you Like to Come?"/>
-					<select>
+				<form id = "banner-form" action="MAILTO:aaronfvaio@msn.com?Subject=Booking%20a%20Device" method="post" enctype="text/plain">
+					<input type = "text" name="Name" placeholder="Who Are You?"/>
+					<input type = "datetime-local" name = "When" placeholder="When Would you Like to Come?"/>
+					<select id = "deviceList" name = "Device">
 						<option>What device Would you like to use</option>
 						<option>Android</option>
 						<option>BlackBerry</option>
@@ -42,11 +43,13 @@
 						<option>Kindle</option>
 						<option>Windows</option>
 					</select>
-				
+					
+					<br/>
+					<input class = "button book_form_button" id = "mailtoform" type = "submit" value = "Book a Visit"/>
 				
 				</form>
 				
-				<a id = "mailtoform" class = "button book_form_button">Book a Visit</a>
+				
 			</span>
 	
 		</header>
@@ -60,7 +63,7 @@
 			
 		</section>
 		
-
+		</body>
 		<footer class="col span_12_of_12">
 			<h2>Rareloop: Open Device Lab</h2>
 			<section class="col span_2_of_12">
@@ -77,7 +80,7 @@
 				<h3>Contact</h3>
 				<ul>
 					<li>Telephone: 02380 982 292</li>
-					<li>Twitter: <a href "https://twitter.com/ODLSouthampton">@ODLSouthampton</a></li>
+					<li>Twitter: <a href "https://www.twitter.com/ODLSouthampton">@ODLSouthampton</a></li>
 					<li>Email: <a href="mailto:odl@rareloop.com">odl@rareloop.com</a></li>
 				</ul>
 			</section>
@@ -90,5 +93,35 @@
 	
 	
 	</div>
+	
+	<script>
+		
+		function init()
+		{
+			
+			var xmlhttp = new XMLHttpRequest();
+			var url = "http://www.kshatriya.co.uk/js/devices.json";
+
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					var myArr = JSON.parse(xmlhttp.responseText);
+					parseJson(myArr);
+				}
+			};
+			xmlhttp.open("GET", url, true);
+			xmlhttp.send();
+
+			function parseJson(arr) {
+				var out = "";
+				var i;
+				for(i = 0; i < arr.length; i++) {
+					out += '<option>'+ arr[i].manufacturer + " " + arr[i].name + '</option>';
+				}
+				document.getElementById("deviceList").innerHTML = out;
+			}
+
+		}
+		
+	</script>
 
 </html>
