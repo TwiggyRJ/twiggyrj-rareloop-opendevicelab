@@ -15,8 +15,8 @@ header{
     width: 101.1% !important;
     height: 400px;
     margin-bottom: -6px;
-	margin-right: 0.45% !important;
-	margin-left: -0.45% !important;
+	margin-right: 1.45% !important;
+	margin-left: -1.45% !important;
 	
 }
 
@@ -29,6 +29,8 @@ header h1{
 	padding-left:20px;
 	margin-top: -2.5%;
 	text-align: center;
+	visibility: visible;
+	margin-left: -3%;
 }
 
 header h1 span.grey{
@@ -46,10 +48,14 @@ header h1 span.spacing{
 	line-height:1.95em;
 }
 
+.mobileBooking{
+	visibility: hidden;
+}
+
 .sectionColour{
 	background-color: #fff;
-	margin-left: -0.5% !important;
-	margin-right: -0.5% !important;
+	margin-left: -1.5% !important;
+	margin-right: -1.5% !important;
 }
 
 .map{
@@ -63,6 +69,14 @@ header h1 span.spacing{
 .mapContainer{
 	float: right !important;
 }
+
+
+.headerImage{
+	visibility: hidden;
+	width: 100px;
+	height: 100px;
+}
+
 
 #jsMap{
 	visibility: hidden;
@@ -122,9 +136,74 @@ footer ul{
 
 	header{
 		margin-top: -1% !important;
-		margin-left: -1% !important;
+		margin-left: -20% !important;
 		margin-right: 1% !important;
-		width: 103% !important;
+		width: 124% !important;
+	}
+	header h1{
+		margin-left: -5%;
+		visibility: hidden;
+		margin-top: -20% !important;
+	}
+	.sectionColour{
+		width: 132% !important;
+	}
+	footer{
+		width: 130% !important;
+	}
+	.headerImage{
+		visibility: visible;
+		margin-right: -65%;
+		margin-top: 15%;
+	}
+	.book_form_button{
+		font-size: 1em !important;
+		padding:11px !important;
+		margin-left: -0.1% !important;
+	}
+	a.button{
+		font-size: 1.7em;
+		padding:10px 15px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.sectionColour{
+		margin-left: -3% !important;
+		margin-right: -3% !important;
+	}
+	footer{
+		margin-left: -3% !important;
+		margin-right: -3% !important;
+	}
+	.map{
+		width: 200px;
+		height: 200px;
+		margin-right: 2% !important;
+	}
+	header h1{
+		visibility: hidden;
+		margin-top: -20% !important;
+	}
+	.headerImage{
+		visibility: visible;
+		margin-left: 35%;
+	}
+	.sectionPadding{
+		margin-left: 2 !important;
+	}
+	.mobileBooking{
+		visibility: visible;
+		font-size: 1em !important;
+	}
+	#banner-form-span{
+		visibility: hidden;
+	}
+	#mapImage{
+		height: 200px;
 	}
 	
 }
@@ -144,9 +223,9 @@ footer ul{
 }
 
 .book_form_button{
-	font-size: 0.8em !important;
-	margin-left: -4% !important;
-	padding: 10px !important;
+	font-size: 0.8em;
+	margin-left: -4%;
+	padding: 10px;
 	margin-top: 1%;
 }
 .button_footer{
@@ -161,6 +240,8 @@ a.button{
 	position:relative;
 	padding:5px 10px;
     white-space: normal;
+	text-decoration: none;
+	border-radius: 5px;
 }
 
 .button:hover {
@@ -230,10 +311,10 @@ input[type=datetime-local]:focus, textarea:focus {
 /* Navigation bar */
 
 nav {
-	margin-left: -0.45%;
+	margin-left: -1.45%;
     margin-right: auto;
-	margin-top: -0.6%;
-    width: 100%;
+	margin-top: -0.7%;
+    width: 116%;
 	z-index:20;
 	position:fixed;
 }
@@ -253,7 +334,7 @@ nav {
     border-bottom: 2px solid #2196F3;
     float: left;
     position: relative;
-    width: 100%;
+    width: 115%;
 	color: #333;
     font: 1.1em "Titillium Web", sans-serif; font-weight: 300;
 	box-shadow: 1px 1px 5px rgba(33,150,243, 0.9);
@@ -328,12 +409,21 @@ nav {
 /* Media Queries */
 /* responsive rules */
 
+@media all and (max-width : 1920px) {
+	nav{
+		margin-left: -0.5%;
+	}
+}
+
 @media all and (max-width : 980px) {
     #nav > li {
         float: none;
         border-bottom: 0;
         margin-bottom: 0;
     }
+	#nav{
+		font: 1.5em "Titillium Web", sans-serif; font-weight: 300;
+	}
     #nav ul.subs {
         position: relative;
         top: 0;
@@ -353,11 +443,13 @@ nav {
 	#nav{
 		z-index:1;
 	}
+	#nav > li > a {
+		padding: 10px 30px;
+	}
 	nav{
 		position:static;
 		margin-bottom: -1%;
 		margin-left: -2%;
-		width: 110%;
 	}
 }
 

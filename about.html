@@ -27,26 +27,34 @@
 	
 			<img id = "banner-image" src = "assets/odl_header_large_alt_blur.jpg"/>
 			<h1>
-				<span class = "index"><span><span class = "grey">Rareloop: Open Device Lab<span class='spacer'></span></span></span></span>
+				<span><img id = "logo-image" class = "headerImage" src = "assets/odl-logo-white@2x.png"/></span>
+				<span class = "index headerText"><span><span class = "grey">Rareloop: Open Device Lab<span class='spacer'></span></span></span></span>
 			</h1>
 			
 			<span id = "banner-booking">
-				<form id = "banner-form" action="MAILTO:aaronfvaio@msn.com?Subject=Booking%20a%20Device" method="post" enctype="text/plain">
-					<input type = "text" name="Name" placeholder="Who Are You?"/>
-					<input type = "datetime-local" name = "When" placeholder="When Would you Like to Come?"/>
-					<select id = "deviceList" name = "Device">
-						<option>What device Would you like to use</option>
-						<option>Android</option>
-						<option>BlackBerry</option>
-						<option>iOS</option>
-						<option>Kindle</option>
-						<option>Windows</option>
-					</select>
-					
-					<br/>
-					<input class = "button book_form_button" id = "mailtoform" type = "submit" value = "Book a Visit"/>
+			
+				<a class = "button mobileBooking" href = "MAILTO:aaronfvaio@msn.com?Subject=Booking%20a%20Device&body=Hello ODL, I am <insert your name/company name here> I would like to book a visit to your Device Lab." >Book a Visit</a>
+			
+				<span id = "banner-form-span">
 				
-				</form>
+					<form id = "banner-form" action="MAILTO:aaronfvaio@msn.com?Subject=Booking%20a%20Device" method="post" enctype="text/plain">
+						<input type = "text" name="Name" placeholder="Who Are You?"/>
+						<input type = "datetime-local" name = "When" placeholder="When Would you Like to Come?"/>
+						<select id = "deviceList" name = "Device">
+							<option>What device Would you like to use</option>
+							<option>Android</option>
+							<option>BlackBerry</option>
+							<option>iOS</option>
+							<option>Kindle</option>
+							<option>Windows</option>
+						</select>
+						
+						<br/>
+						<input class = "button book_form_button" id = "mailtoform" type = "submit" value = "Book a Visit"/>
+					
+					</form>
+				
+				</span>
 				
 				
 			</span>
@@ -54,13 +62,20 @@
 		</header>
 		
 		
-		<section id = "contentSection" class="col span_12_of_12">
+		<section id = "contentSection" class="col sectionPadding span_12_of_12">
 		
 			<h2>Where is the Lab</h2>
 			
+			<p>Open Device Lab Southampton is located in the Rareloop offices at the Basepoint business center. To make use of the lab please contact us a few days beforehand so we can arrange a time to visit.</p>
 			<div class = "map"><div id = 'jsMap' class = 'map'> </div><img id = "mapImage" src="http://maps.googleapis.com/maps/api/staticmap?center=SO14+5FE&amp;zoom=15&amp;size=600x350&amp;scale=2&amp;sensor=false&amp;maptype=roadmap&amp;markers=icon%3Ahttp%3A%2F%2Fodl.rareloop.com%2Fimages%2Fmap-pin.png%7CSO14+5FE"></div>
+			<br>
 			
+			<h2>Donating to the Lab</h2>
 			
+			<p>Anyone can participate and help the developer community of Southampton by lending their devices to improve our collection. The devices in the Open Device Lab are supplied by donations so if you wish to participate and donate, click the button below.</p>
+			<a class="button" href="mailto:odl@rareloop.com?Subject=Donating%20a%20Device">Donate to the lab</a>
+			
+			<br>
 			
 		</section>
 	
@@ -91,7 +106,7 @@
 			</section>
 			<section class="col span_7_of_12">
 				<h3>Contribute</h3>
-				<p>Anyone can participate and help the developer community of Southampton by lending their devices to improve our collection.</p>
+				<p>Anyone can participate and help the developer community of Southampton by lending their devices, to donate click below.</p>
 				<a class="button button_footer" href="mailto:odl@rareloop.com?Subject=Donating%20a%20Device">Donate to the lab</a>
 			</section>
 		
@@ -103,6 +118,11 @@
 	<script>
 		
 		init();
+		
+		var scrollEventHandler = function()
+		{
+		  window.scroll(0, window.pageYOffset)
+		}
 		
 		function init()
 		{
@@ -161,7 +181,6 @@
 				
 				map.addLayer(odl);
 
-			
 			}
 
 		}
