@@ -33,8 +33,6 @@
 			
 			<span id = "banner-booking">
 			
-				<a class = "button mobileBooking" href = "MAILTO:aaronfvaio@msn.com?Subject=Booking%20a%20Device&body=Hello ODL, I am <insert your name/company name here> I would like to book a visit to your Device Lab." >Book a Visit</a>
-			
 				<span id = "banner-form-span">
 				
 					<form id = "banner-form" action="MAILTO:aaronfvaio@msn.com?Subject=Booking%20a%20Device" method="post" enctype="text/plain">
@@ -56,7 +54,6 @@
 				
 				</span>
 				
-				
 			</span>
 	
 		</header>
@@ -67,7 +64,13 @@
 			<h2>Where is the Lab</h2>
 			
 			<p>Open Device Lab Southampton is located in the Rareloop offices at the Basepoint business center. To make use of the lab please contact us a few days beforehand so we can arrange a time to visit.</p>
-			<div class = "map"><div id = 'jsMap' class = 'map'> </div><img id = "mapImage" src="http://maps.googleapis.com/maps/api/staticmap?center=SO14+5FE&amp;zoom=15&amp;size=600x350&amp;scale=2&amp;sensor=false&amp;maptype=roadmap&amp;markers=icon%3Ahttp%3A%2F%2Fodl.rareloop.com%2Fimages%2Fmap-pin.png%7CSO14+5FE"></div>
+			
+			<div class = "mapDiv span_8_of_12"> 
+			
+				<div class = "map"><div id = 'jsMap' class = 'map'> </div><img id = "mapImage" src="http://maps.googleapis.com/maps/api/staticmap?center=SO14+5FE&amp;zoom=15&amp;size=600x350&amp;scale=2&amp;sensor=false&amp;maptype=roadmap&amp;markers=icon%3Ahttp%3A%2F%2Fodl.rareloop.com%2Fimages%2Fmap-pin.png%7CSO14+5FE"></div>
+			
+			</div>
+			
 			<br>
 			
 			<h2>Donating to the Lab</h2>
@@ -76,17 +79,18 @@
 			<a class="button" href="mailto:odl@rareloop.com?Subject=Donating%20a%20Device">Donate to the lab</a>
 			
 			<br>
+			<br>
 			
 		</section>
 	
 	</div>
 
-		<footer>
+	<footer>
 		
-			<div class="section group">
+		<div class="section group">
 		
 			<h2>Rareloop: Open Device Lab</h2>
-			<section class="col span_2_of_12">
+			<section class="col sectionFooterPadding span_2_of_12">
 				<h3>Address</h3>
 				<ul>
 					<li><a href = "http://www.rareloop.com/" alt = "Rareloop">Rareloop Ltd</a></li>
@@ -96,7 +100,7 @@
 					<li>SO14 5FE</li>
 				</ul>
 			</section>
-			<section class="col span_2_of_12">
+			<section class="col sectionFooterPadding span_2_of_12">
 				<h3>Contact</h3>
 				<ul>
 					<li>Telephone: 02380 982 292</li>
@@ -104,25 +108,19 @@
 					<li>Email: <a href="mailto:odl@rareloop.com">odl@rareloop.com</a></li>
 				</ul>
 			</section>
-			<section class="col span_7_of_12">
+			<section class="col sectionFooterPadding span_7_of_12">
 				<h3>Contribute</h3>
 				<p>Anyone can participate and help the developer community of Southampton by lending their devices, to donate click below.</p>
 				<a class="button button_footer" href="mailto:odl@rareloop.com?Subject=Donating%20a%20Device">Donate to the lab</a>
 			</section>
+				
+		</div>
 		
-			</div>
-		</footer>
-	
-	
+	</footer>
 	
 	<script>
 		
-		init();
-		
-		var scrollEventHandler = function()
-		{
-		  window.scroll(0, window.pageYOffset)
-		}
+		init(); 
 		
 		function init()
 		{
