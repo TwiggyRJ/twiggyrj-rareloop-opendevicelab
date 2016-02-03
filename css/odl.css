@@ -12,10 +12,9 @@ header{
 	position: relative;
     display: inline-block;
     overflow: hidden;
-    width: 101.1% !important;
-    height: 400px;
+    width: 106.1% !important;
+    height: 450px;
     margin-bottom: -6px;
-	margin-right: 1.45% !important;
 	margin-left: -1.45% !important;
 	
 }
@@ -51,8 +50,7 @@ header h1 span.spacing{
 table{
 	border-collapse:collapse;
 	font-size: 1.5em;
-	width: 60%;
-	margin-left: 17%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -80,14 +78,8 @@ td{
 	text-align: center;
 	font-size: 1.5em;
 }
-
-.sectionColour{
-	background-color: #fff;
-	margin-left: -1.5% !important;
-	margin-right: -1.5% !important;
-}
 .mainBooking{
-	margin-left: 35%;
+	float: right;
 }
 
 .mainBooking input[type=text], textarea {
@@ -195,9 +187,7 @@ footer ul{
 	
 	header{
 		margin-top: -1% !important;
-		margin-left: -33% !important;
-		margin-right: 1% !important;
-		width: 136% !important;
+		width: 160% !important;
 	}
 	
 	#aboutContent{
@@ -211,15 +201,8 @@ footer ul{
 		text-align: left;
 		margin-left: 0.0%;
 	}
-	table{
-		width: 60%;
-		margin-left: 0%;
-	}
 	.sectionPadding{
 		margin-left: 2% !important;
-	}
-	.sectionColour{
-		width: 143% !important;
 	}
 	footer{
 		width: 160% !important;
@@ -242,22 +225,17 @@ footer ul{
 	.sectionFooterPadding{
 		margin-left: 0% !important;
 	}
-	#banner-form{
-		margin-left
-	}
 }
 
 @media all and (max-width : 980px) and (orientation : portrait){
 
 	header{
 		margin-top: -1% !important;
-		margin-left: -10% !important;
-		margin-right: 1% !important;
-		width: 129% !important;
+		width: 160% !important;
 	}
 	header h1{
-		margin-left: -2%;
 		margin-top: -3% !important;
+		text-align: left !important;
 	}
 	
 	.devices h2{
@@ -269,12 +247,12 @@ footer ul{
 		margin-left: 0.0%;
 	}
 	table{
-		width: 80%;
+		width: 125%;
 		margin-left: 0%;
 	}
 	
 	.sectionColour{
-		width: 147% !important;
+		padding: 0 2%;
 	}
 	.sectionPadding{
 		margin-left: 2% !important;
@@ -311,9 +289,8 @@ footer ul{
 		margin-top: -60%;
 		position: absolute;
 	}
-	
 	#banner-form{
-		margin-left
+		width: 70%;
 	}
 	#banner-form select{
 		font-size: 0.65em !important;
@@ -724,7 +701,7 @@ nav {
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 1% 0 1% 0;
 }
 .col:first-child { margin-left: 0; }
 
